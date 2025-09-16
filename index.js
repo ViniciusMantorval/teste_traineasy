@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 const db = mysql.createConnection({
   host: process.env.MYSQLHOST,
   user: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD, // Corrigido: removido aspas extras
+  password: process.env.MYSQLPASSWORD,
   database: process.env.MYSQLDB
 });
 
